@@ -1,9 +1,7 @@
-// Summing Array Elements  
-//    Write a program to sum all elements of an array of numbers and print the result.
+// Given the array days_until_festival = [30, 15, 45, 10, 25],
+//  where each element represents the number of days left until an important festival, 
+// find the closest upcoming festival.
 
-let array=[1,2,3,4,5,6];
-sum=0;
-for (let i=1;i<array.length;i++){
-    sum+=array[i];
-    console.log(sum);
-}
+let  days_until_festival = [30, 15, 45, 10, 25];
+let answer=Math.min(...days_until_festival);
+console.log(answer);

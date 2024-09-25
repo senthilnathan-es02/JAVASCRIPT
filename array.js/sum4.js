@@ -1,6 +1,11 @@
-// Array Length  
-//    Write a program to print the length of an array containing 7 elements.
+// Given the array populations = [50, 60, 70, 80, 90],
+//  where each element represents the population of an 
+// Indian state over the last 5 years, calculate the average population.
 
-let array =["senthil","guna","vel"];
-answer=array.length;
-console.log(answer);
+let  populations = [50, 60, 70, 80, 90];
+let avg=Math.max(...populations);
+console.log(avg);
+
+
+
+

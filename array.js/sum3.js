@@ -1,8 +1,7 @@
-// Modifying Array Elements  
-// Create an array of 3 elements. Change the 2nd element to "modified" 
-// and print the array.
+// Given the array soldiers = [120, 300, 250, 180, 150], 
+// where each element represents the number of soldiers assigned to different regions,
+//  find the region with the highest number of soldiers
 
-let array =["senthil","guna","vel"];
-array[2]="modified";
-console.log(array);
-
+let soldiers = [120, 300, 250, 180, 150];
+let maxSoliders=Math.max(...soldiers);
+console.log(maxSoliders);
