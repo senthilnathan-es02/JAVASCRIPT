@@ -8,7 +8,7 @@ let oddcount=0;
 for(i=0;i<ln;i++){
     if(oddnumber[i] %2 !== 0){
         oddcount++;
-
+        
     }
 
 }
