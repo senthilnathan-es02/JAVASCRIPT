@@ -13,5 +13,5 @@ else if (a<5)
     console.log(d);
     }
 
-
+    
     else{console.log("nothing to happen");}

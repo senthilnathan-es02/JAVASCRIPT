@@ -1,4 +1,4 @@
-function number(n1,n2){
+function  number(n1,n2) {
 
     let rev=n1.reverse();
     let rev1=n2.reverse();

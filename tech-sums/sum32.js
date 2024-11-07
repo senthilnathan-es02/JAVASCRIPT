@@ -2,11 +2,10 @@
 
 let num = [2, 7, 11, 15];
 let sum=0;
-let index=0;
 for(i=0;i<num.length;i++){
     sum=num[1]+num[2];
-    index=num[1];
-    index1=num[2];
+   var index=num[1];
+   var index1=num[2];
 
 }console.log(index);
 console.log(index1);

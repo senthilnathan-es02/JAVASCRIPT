@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+     <p class="p1">I love coding</p>
+     <p class="p2">I more love coding</p>
+     <button class="button">Show alert box</button>
+    </div>
+
+
+    <script>
+
+      var a=document.getElementsByClassName("p1");
+     var b=document.getElementsByClassName("p2");
+    var c=document.getElementsByClassName("button");
+
+
+c[0].addEventListener("click",()=>{
+    alert(a[0].textContent);
+});
+    
+
+
+ </script>
+    
+</body>
+</html>

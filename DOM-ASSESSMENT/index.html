@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Test</title>
+  <style>
+    .box-style {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">DOM Manipulation Test</h1>
+    <button id="addBox">Add Box</button>
+    <button id="removeBox">create link button</button>
+    <button id="showBoxCount">Show Box Count</button>
+  </div>
+
+
+  <script >
+  // 1. Show alert of the text content of the h1 element using class
+
+
+  const header = document.querySelector('.header');
+          alert(header.textContent);
+
+
+
+
+
+
+  // 2. Create a new div and append the child to the container, with the text content "New Box"
+  
+
+  const addBoxBtn = document.getElementById('addBox');
+    const container = document.querySelector('.container');
+
+
+
+  addBoxBtn.addEventListener('click', () => {
+     
+    const newDiv = document.createElement('div');
+   
+   
+    newDiv.classList.add('box-style');
+         
+    
+    
+    newDiv.textContent = 'New Box';
+    container.appendChild(newDiv);
+  });
+
+  // 3. Show the number of boxes in an alert
+  const showBoxCountBtn = document.getElementById('showBoxCount');
+  
+  showBoxCountBtn.addEventListener('click', () => {
+    const boxes = document.querySelectorAll('.box-style');
+    alert(`Number of boxes: ${boxes.length}`);
+  });
+
+  // 4. Create an <a> element on button click, with text content "Hi There" and set href
+  const removeBoxBtn = document.getElementById('removeBox');
+
+  removeBoxBtn.addEventListener('click', () => {
+    const newLink = document.createElement('a');
+    newLink.textContent = 'vijay';
+    newLink.href = 'https://www.google.com/search?sa=X&sca_esv=33073fab614d76a8&rlz=1C1GCEU_en___IN1117&biw=1308&bih=744&q=The+Greatest+of+All+Time&stick=H4sIAAAAAAAAAONgFuLUz9U3MCkzzzZS4tVP1zc0LDM0NCuryjHRkshOttIvSM0vyEkFUkXF-XlWufllmanFi1glQjJSFdyLUhNLUotLFPLTFBxzchRCMnNTd7AyTmBjBAB0ZNqKVwAAAA&ved=2ahUKEwjKsMHEoo2JAxXtS2wGHV87E3cQ-BZ6BAhDEA4';
+    container.appendChild(newLink);
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
