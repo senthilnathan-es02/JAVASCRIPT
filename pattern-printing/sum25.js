@@ -1,15 +1,3 @@
-// let n= 5;
-// let a =0;
-// let b =1;
-// let sum = 0;
-// for(i=0;i<=n;i++){
-//     console.log(a);
-//     sum=a+b+2;
-//     a=b;
-//     b=sum;
-
-// }
-
 let n = 5;
 let a = 0;
 let b = 1;
