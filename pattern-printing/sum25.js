@@ -9,6 +9,8 @@ for(i=1;i<=n;i++){
     a = b;
     b = c;
     
+    
 }
 console.log(sum);
+
 

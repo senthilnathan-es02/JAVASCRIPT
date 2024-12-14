@@ -5,7 +5,7 @@ for(i=1; i<=max; i++){
         console.log(i);
         break;
     }
-}
+}   
 }lcm(12,18);
 
 
@@ -15,7 +15,7 @@ while(max>0){
     if(a%max==0 && b%max==0){
         console.log(max);
     }
-    max--
+    max--;
 }
 
 } gcd(12,34);
